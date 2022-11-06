@@ -40,7 +40,8 @@ let decr = 10;
 
 // console.log(2 * 4 === 8);
 
-const isChecked = true;
-const isClose = false;
+// const isChecked = true;
+// const isClose = false;
 
-console.log(isChecked || !isClose);
+// console.log(isChecked || !isClose);
+
