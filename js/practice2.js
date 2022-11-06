@@ -1,36 +1,67 @@
 "use strict";
 
-const option = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    }
-};
+let age = prompt("Skolko vam let?", '');
 
-// console.log(option.name);
+// if (age < 18) {
+//     alert('Ranovato ewe!');
+// } else if (age > 100) {
+//     alert('Posznovato ewe!');
+// }
+// else {
+//     alert('Vi mozhete voiti!');
+// }
 
-// delete option.name;
-// console.log(option);
 
-let counter = 0;
-for (let key in option) {
-    if (typeof(option[key]) === 'object') {
-        for (let i in option[key]) {
-            console.log(`Property ${i} imeet znachenie ${option[key][i]}`);
-            counter++;
-        }
-    } 
+switch (age) {
+    case '18':
+        alert('Vi mozhete voiti!');
+        break;
+    
+    case '100':
+        alert('Posznovato ewe!');
+        break;
 
-    else {
-        console.log(`Property ${key} imeet znachenie ${option[key]}`);
-        counter++;
-    }
+    default:
+        alert('Znachenie neizvestno!');
 }
 
-console.log(counter);
+// const option = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log("test");
+//     }
+// };
+
+// option.makeTest();
+
+// const {border, bg} = option.colors; // destryktorizacia
+// console.log(border);
+
+// console.log(Object.keys(option).length);
+
+
+// let counter = 0;
+// for (let key in option) {
+//     if (typeof(option[key]) === 'object') {
+//         for (let i in option[key]) {
+//             console.log(`Property ${i} imeet znachenie ${option[key][i]}`);
+//             counter++;
+//         }
+//     } 
+
+//     else {
+//         console.log(`Property ${key} imeet znachenie ${option[key]}`);
+//         counter++;
+//     }
+// }
+
+// console.log(counter);
 
 
 
@@ -59,3 +90,4 @@ console.log(counter);
 // }
 
 // learnJs('Javascript', done);
+
